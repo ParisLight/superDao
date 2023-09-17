@@ -1,0 +1,34 @@
+.card{
+    padding: 30px;
+    background-color: $dark-blue;
+    border-radius: 20px;
+    border: 2px solid $grey-2;
+    max-width: 361px;
+    width: 100%;
+}
+
+.card-logo{
+    max-width: 50px;
+    height: 50%;
+    width: 100%;
+    border-radius: 8px;
+    border: 2px solid $grey-2;
+    font-size: 0;
+    img{
+        width: 100%;
+        height: 50%;
+        object-fit: cover;
+    }
+}
+
+.card-title{
+    margin-top: 21px;
+}
+
+.card-description{
+    margin-top: 18px;
+}
+
+.card-all{
+    margin-top: 34px;
+}

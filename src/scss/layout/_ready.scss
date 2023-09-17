@@ -1,0 +1,78 @@
+.ready {
+  text-align: center;
+  margin-top: 65px;
+}
+
+.ready-title{
+    position: relative;
+}
+.ready-stars{
+    position: absolute;
+    left: 100px;
+    top: 0;
+    width: 88px;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.project-buttons {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 24px;
+  justify-content: center;
+  margin-top: 44px;
+}
+
+.ready-img{
+    position: relative;
+    margin-top: 44px;
+    border-radius: 30px;
+}
+
+.project-launched{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -4%;
+    display: inline-block;
+    padding: 6px 24px;
+    background-color: $orange;
+    border-radius: 100px;
+    border: 4px;
+    overflow: hidden;
+    cursor: pointer;
+
+    span{
+        color: $bg;
+        font-weight: 700;
+        line-height: 32px;
+    }
+
+    &::after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -35px;
+        width: 10px;
+        height: 100%;
+        background-color: $white;
+        transform:  skew(300deg);
+        animation: spark 2.5s infinite;
+    }
+}
+
+
+
+@keyframes spark {
+    0%, 20%{
+        left: -35px;
+    }
+    100%{
+        left: 500px;
+    }
+}

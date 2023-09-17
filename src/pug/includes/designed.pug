@@ -1,0 +1,10 @@
+- var links = [ { link: '#', text: 'Organisation design' }, { link: '#', text: 'Smart contract development' }, { link: '#', text: 'Fundraising' }, { link: '#', text: 'Launch marketing' }, { link: '#', text: 'Contributor management'}, { link: '#', text: 'DAO operations'}]
+
+.designed
+    .designed-title
+        h2.second-title Designed for the full journey
+        .designed-sparks 
+            img(src="images/stars_2.svg", alt="stars")
+    .designed-list 
+        each link in links 
+            a(href=`${link.link}`) #{link.text}

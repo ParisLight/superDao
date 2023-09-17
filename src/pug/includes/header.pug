@@ -1,0 +1,11 @@
+- var navLinks = [{ href: "#", text: "Product" },{ href: "#", text: "Use cases" },{ href: "#", text: "Learn" },{ href: "#", text: "About" },{ href: "#", text: "Jobs" }];
+
+header.header
+    .container.header-container  
+        a.logo(href='#')
+            img(src='images/Logo.svg', alt='logo')
+        nav.header-nav
+            each link in navLinks
+                a(href=link.href)= link.text
+        .header-btn
+            span Login

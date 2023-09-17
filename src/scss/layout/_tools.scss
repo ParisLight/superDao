@@ -1,0 +1,41 @@
+.tools{
+    margin-top: 200px;
+    text-align: center;
+}
+
+.tools-title{
+    position: relative;
+}
+
+.tools-sparks{
+    position: absolute;
+    top: -30px;
+    left: 150px;
+    max-width: 67px;
+    width: 100%;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.tools-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 30px;
+    margin-top: 32px;
+}
+
+.tools-item{
+    font-size: 22px;
+    line-height: 40px;
+    font-weight: 600;
+    transition: .3s ease-in color;
+    cursor: pointer;
+
+    &:hover{
+        color: $yellow;
+    }
+}

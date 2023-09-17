@@ -1,0 +1,30 @@
+.tooltip{
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    background-color: $grey-1;
+    padding: 12px 0;
+}
+
+.tooltip-item{
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+    padding: 8px 20px;
+    cursor: pointer;
+    transition: .3s ease-in-out background;
+    background-color: $grey-1;
+
+    &:hover{
+        background-color: $grey-2;
+    }
+}
+
+.tooltip-icon{
+    max-width: 36px;
+    width: 100%;
+
+    img{
+        width: 100%;
+    }
+}
