@@ -5,7 +5,15 @@ gsap.registerPlugin(ScrollTrigger);
 
 const timeLineStarted = gsap.timeline();
 
-timeLineStarted.fromTo('.started-title', {
+timeLineStarted.fromTo('.header', {
+    x: -100,
+    opacity: 0
+}, {
+    x: 0,
+    opacity: 1,
+    duration: 1,  
+    ease: "power3.out",
+}).fromTo('.started-title', {
   x: -300,
   opacity: 0,
 }, {
@@ -26,3 +34,39 @@ timeLineStarted.fromTo('.started-title', {
     y: 0,
     opacity: 1
 })
+
+gsap.from('.designed-list a:nth-child(odd)', {
+    x: -200,
+    opacity: 0, 
+    duration: 1, 
+    stagger: 0.2, 
+    scrollTrigger: {
+       trigger: '.designed',
+       start: '20% bottom',
+       scrub: true,
+       end: '80% center'
+    },
+});
+
+gsap.from('.project-buttons .color-btn', {
+    opacity: 0,
+    scale: 0,
+    stagger: 0.2,
+    scrollTrigger: {
+        trigger: '.ready',
+        start: '30% bottom'
+    }
+})
+
+gsap.from('.designed-list a:nth-child(even)', {
+    x: 200, 
+    opacity: 0, 
+    duration: 0.7, 
+    stagger: 0.2, 
+    scrollTrigger: {
+       trigger: '.designed',
+       start: '20% bottom',
+       end: '80% center',
+       scrub: true,
+    },
+});

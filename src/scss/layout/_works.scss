@@ -1,5 +1,15 @@
 .works {
     text-align: center;
+
+    &__stars{
+        position: absolute;
+        right: 30%;
+        top: -25%;
+    }
+}
+
+.works-title{
+    position: relative;
 }
 
 .works-list {

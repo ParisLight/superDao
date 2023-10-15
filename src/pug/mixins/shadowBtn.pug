@@ -1,0 +1,8 @@
+mixin shadowBtn(title, text, icon, backgroundColor, textColor, boxShadow)
+    .shadow-btn(style=`background: ${backgroundColor}; box-shadow: ${boxShadow}`)
+        .shadow-btn__wrapper 
+            .shadow-btn__icon
+                img(src=icon, alt="icon")
+            .shadow-btn__info
+                span.shadow-btn__title(style=`color: ${textColor}`)= title
+                span.shadow-btn__text(style=`color: ${textColor}`)= text

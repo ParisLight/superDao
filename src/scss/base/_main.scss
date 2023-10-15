@@ -46,3 +46,42 @@ a {
   line-height: 80px;
   color: $grey-light;
 }
+
+.cards-list{
+  margin-top: 28px;
+  display: flex;
+  align-items: stretch;
+  column-gap: 28px;
+}
+
+.cards-all{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  column-gap: 10px;
+  cursor: pointer;
+
+  &:hover{
+    .cards-arrow{
+      transform: translateX(10px);
+    }
+
+    span{
+      color: $white;
+    }
+  }
+
+  span{
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 40px;
+    color: $grey-6;
+    text-shadow: 0px 2px 25px rgba(0, 0, 0, 0.60);
+    transition: .3s ease-in color;
+  }
+}
+
+.cards-arrow{
+  font-size: 0;
+  transition: .3s ease-in transform;
+}

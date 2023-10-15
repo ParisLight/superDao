@@ -1,0 +1,43 @@
+include ../mixins/card.pug
+
+- 
+    var podcastsList = [
+        {
+            logoUrl: 'images/pres-ic-1.svg',
+            title: 'Understanding DAOs with Yury Lifshits', 
+            descr: 'The Pomp Podcast <br> by Anthony Pompliano', 
+            link: '#', 
+            linkText: 'Read',
+            background: '#77E6FF',
+            textColor: '#10151A'
+        }, 
+        {
+            logoUrl: 'images/pres-ic-2.svg', 
+            title: 'Everything You Need to Know About DAOs with Yury Lifshits from Superdao', 
+            descr: 'The Unstoppable Podcastby Josh Gordon', 
+            link: '#', 
+            linkText: 'Read',  
+            background: '#E2C1F9', 
+            textColor: '#10151A'
+        }, 
+        {
+            logoUrl: 'images/pres-ic-3.svg', 
+            title: 'Yury Lifshits - Superdao: The “Shopify” for DAOs', 
+            descr: 'Zima Redby Andrew Stainwold', 
+            link: '#', linkText: 'Read', 
+            background: '#DBE268', 
+            textColor: '#10151A'
+        }
+    ]
+section.press
+    .press-title
+        h2.second-title Press
+        .press__stars 
+            img(src="/images/press_stars.svg", alt="stars")
+    .cards-all
+        span See all 
+        .cards-arrow
+            img(src="images/grey-arrow.svg", alt="arrow")
+    .cards-list
+        each podcatsItem in podcastsList
+            +card(podcatsItem.logoUrl, podcatsItem.title, podcatsItem. descr, podcatsItem.link, podcatsItem.linkText, podcatsItem.background, podcatsItem.textColor)

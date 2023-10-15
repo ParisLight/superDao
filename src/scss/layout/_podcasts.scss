@@ -1,0 +1,22 @@
+.podcasts {
+  margin-top: 210px;
+
+  &__stars{
+    position: absolute;
+    left: -10%;
+    top: -50%;
+  }
+}
+
+.podcasts-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.podcasts-list {
+  display: flex;
+  align-items: stretch;
+  column-gap: 28px;
+}

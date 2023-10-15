@@ -1,7 +1,9 @@
 - var worksList = [{ image: "eth.png", text: "Ethereum", alt: "crypto" }, { image: "poly.png", text: "Polygon", alt: "crypto" }, { image: "gnosis.png", text: "Gnosis", alt: "crypto" }, { image: "snap.png", text: "Snap", alt: "crypto" }, { image: "ens.png", text: "ENS", alt: "crypto" }, { image: "oepnsea.png", text: "OpenSea", alt: "crypto" }];
-.works 
+section.works 
     .works-title 
-        h2.second-title Works with 
+        h2.second-title Works with
+        .works__stars
+            img(src="/images/works_stars.svg", alt="stars")
     .works-list 
         each work in worksList
             .works-item

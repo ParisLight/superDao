@@ -1,4 +1,5 @@
 import './gsapConfig';
+import './tooltip.js'
 
 document.addEventListener('DOMContentLoaded', (e) => {
     // scroll to ready section

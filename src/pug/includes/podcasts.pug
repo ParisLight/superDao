@@ -1,5 +1,38 @@
 include ../mixins/card.pug
-.podcusts-title 
-    h2.second-title Podсasts
-    .podcusts-list
-        +card()
+
+- 
+    var podcastsList = [
+        {
+            logoUrl: 'images/podc-icon.png', 
+            title: 'Understanding DAOs with Yury Lifshits', 
+            descr: 'The Pomp Podcast <br> by Anthony Pompliano', 
+            link: '#', linkText: 'Listen'
+        }, 
+        {
+            logoUrl: 'images/podc-icon2.png', 
+            title: 'Everything You Need to Know About DAOs with Yury Lifshits from Superdao', 
+            descr: 'The Unstoppable Podcastby Josh Gordon', 
+            link: '#', 
+            linkText: 'Watch'
+        }, 
+        {
+            logoUrl: 'images/podc-icon3.png', 
+            title: 'Yury Lifshits - Superdao: The “Shopify” for DAOs', 
+            descr: 'Zima Redby Andrew Stainwold', 
+            link: '#', 
+            linkText: 'Listen'
+        }
+    ]
+
+section.podcasts
+    .podcasts-title 
+        h2.second-title Podсasts
+        .podcasts__stars 
+            img(src="/images/podcasts_stars.svg", alt="stars")
+        .cards-all
+            span See all 
+            .cards-arrow
+                img(src="images/grey-arrow.svg", alt="arrow")
+    .cards-list
+        each podcatsItem in podcastsList
+            +card(podcatsItem.logoUrl, podcatsItem.title, podcatsItem. descr, podcatsItem.link, podcatsItem.linkText)

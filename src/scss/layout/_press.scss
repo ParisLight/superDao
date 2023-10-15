@@ -1,0 +1,20 @@
+.press {
+  margin-top: 200px;
+    position: relative;
+
+  &__stars{
+    position: absolute;
+    left: 15%;
+    top: -5%;
+  }
+
+  .card-logo {
+    max-width: 160px;
+    width: 100%;
+
+    img {
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+}

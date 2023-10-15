@@ -7,8 +7,9 @@ footer.footer
         a.logo(href='#')
             img(src='images/Logo.svg', alt='logo')
         .links
+            include ../partials/tooltip.pug
             each link in footerLinks
-                a(href=link.href, class=link.class)= link.text
+                div(href=link.href, class=link.class)= link.text
         .socials 
             each link in socialLinks
                 a(href=link.href, class=link.class)

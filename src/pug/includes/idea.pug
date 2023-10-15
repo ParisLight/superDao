@@ -1,0 +1,32 @@
+include ../mixins/shadowBtn
+
+-
+    var buttons = [
+        {
+            title: 'Telegram',
+            text: '@superdao_team',
+            icon: '/images/Icon_telegram.svg',
+            backgroundColor: '#FFC803',
+            textColor: '#4D3705',
+            boxShadow: '0px 8px 40px 0px rgba(255, 200, 3, 0.20)'
+        },
+        {
+            title: 'Email',
+            text: 'hello@superdao.co',
+            icon: '/images/Icon_email.svg',
+            backgroundColor: '#E2C1F9',
+            textColor: '#40354B',
+            boxShadow: '0px 8px 40px 0px rgba(226, 193, 249, 0.20)'
+        }
+    ]
+
+section.idea
+    .idea__stars
+        img(src="/images/idea_stars.svg", alt="stars")
+    .idea__idea-title
+        h2.second-title What's your DAO idea?
+    .idea__gray-text
+        span Let’s chat and see how we can help
+    .idea__socials
+        each btn in buttons
+            +shadowBtn(btn.title, btn.text, btn.icon, btn.backgroundColor, btn.textColor, btn.boxShadow)

@@ -1,9 +1,12 @@
 .tooltip{
-    display: flex;
-    flex-direction: column;
-    border-radius: 12px;
-    background-color: $grey-1;
-    padding: 12px 0;
+    position: absolute;
+    display: none;
+    &__wrapper{
+        display: inline-block;
+        border-radius: 12px;
+        background-color: $grey-1;
+        padding: 12px 0;
+    }
 }
 
 .tooltip-item{

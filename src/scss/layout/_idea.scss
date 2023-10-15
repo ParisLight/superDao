@@ -1,0 +1,27 @@
+.idea {
+  text-align: center;
+  padding-bottom: 200px;
+  
+  &__stars{
+    text-align: center;
+    margin: 120px 0 100px 0;
+  }
+
+  &__gray-text{
+    span{
+      font-size: 48px;
+      line-height: 74px;
+      color: $grey-7;
+      font-weight: 700;
+      line-height: 74px; 
+    }
+  }
+
+  &__socials{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 32px;
+    margin-top: 52px;
+  }
+}
