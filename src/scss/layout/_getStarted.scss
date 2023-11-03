@@ -1,63 +1,62 @@
-.started{
-    margin-top: 130px;
-    text-align: center;
-    // border-radius: 388px;
-    // background: #5C9DFF;
-    // filter: blur(332px);
+.started {
+  margin-top: 130px;
+  text-align: center;
+  // border-radius: 388px;
+  // background: #5C9DFF;
+  // filter: blur(332px);
 
-    &__yellow-btn{
-        margin-top: 56px;
-    }
+  &__yellow-btn {
+    margin-top: 56px;
+  }
+  &__double-arrows {
+    margin-top: 119px;
+  }
 
-    &__double-arrows{
-        margin-top: 119px;
-    }
-}
-
-.started-description{
+  &__description {
     margin-top: 32px;
-    span{
-        font-size: 26px;
-        line-height: 46px;
-        color: $white;
+    span {
+      font-size: 26px;
+      line-height: 46px;
+      color: $white;
     }
+  }
 }
 
-.yellow-btn{
-    padding: 16px 48px;
-    background-color: $yellow;
-    display: inline-block;
-    border-radius: 16px;
-    box-shadow: $golden-gradient;
-    cursor: pointer;
-    transition: .3s ease-in-out box-shadow;
+.yellow-btn {
+  padding: 16px 48px;
+  background-color: $yellow;
+  display: inline-block;
+  border-radius: 16px;
+  box-shadow: $golden-gradient;
+  cursor: pointer;
+  transition: 0.3s ease-in-out box-shadow;
 
-    span{
-        color: $black;
-        font-size: 20px;
-        font-weight: 700;
-        line-height: 36px;
-    }
+  span {
+    color: $black;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 36px;
+  }
 
-    &:hover{
-        box-shadow: $golden-gradient-active;
-    }
+  &:hover {
+    box-shadow: $golden-gradient-active;
+  }
 }
 
-.double-arrows{
-    position: relative;
-    cursor: pointer;
-    animation: arrows-slide 2s infinite;
+.double-arrows {
+  position: relative;
+  cursor: pointer;
+  animation: arrows-slide 2s infinite;
 }
 
 @keyframes arrows-slide {
-    0%{
-        top: 0;
-    }
-    50%{
-        top: 15px;
-    }
-    100%{
-        top: 0;
-    }
+  0% {
+    top: 0;
+  }
+  50% {
+    top: 15px;
+  }
+  100% {
+    top: 0;
+  }
 }

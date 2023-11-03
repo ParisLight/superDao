@@ -6,13 +6,13 @@
     left: -10%;
     top: -50%;
   }
-}
 
-.podcasts-title {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: relative;
+  &__title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+  }
 }
 
 .podcasts-list {

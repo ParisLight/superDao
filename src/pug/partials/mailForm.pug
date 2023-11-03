@@ -2,12 +2,12 @@ include ../mixins/button.pug
 include ../mixins/input.pug
 
 form.mail-form
-    .form-title
+    .mail-form__form-title
         span.second-title Weekly digest 
-    .form-description
+    .mail-form__form-description
         span Latest news in DAOs and Web3
-    .form-actions
-        .form-input
+    .mail-form__form-actions
+        .mail-form__form-input
             +input('Your email')
         +button('#CEAAFF', 'Subscribe')
 

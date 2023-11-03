@@ -1,45 +1,41 @@
-.help{
-    margin-top: 200px;
-}
+.help {
+  margin-top: 200px;
 
-.help-title{
+  &__title {
     text-align: center;
-}
-
-.team-list{
+  }
+  &__team-list {
     display: flex;
     align-items: center;
     justify-content: center;
     column-gap: 25px;
     margin-top: 44px;
-}
-
-.person-img{
+  }
+  &__steps-list {
+    max-width: 900px;
+    margin: 48px auto 0;
+    text-align: center;
+  }
+  &__person-img {
     border-radius: 40px;
     overflow: hidden;
     font-size: 0;
     max-width: 160px;
 
-    img{
-        width: 100%;
-        object-fit: none;
+    img {
+      width: 100%;
+      object-fit: none;
     }
-}
-
-.steps-list{
-    max-width: 900px;
-    margin: 48px auto 0;
-    text-align: center;
-}
-
-.step{
+  }
+  &__step {
     display: inline-block;
-    &:not(:first-child){
-        margin-left: 28px;
+    &:not(:first-child) {
+      margin-left: 28px;
     }
-}
+  }
 
-.step-text{
+  &__step-text {
     font-size: 40px;
     font-weight: 700;
+  }
 }

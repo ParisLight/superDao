@@ -1,16 +1,27 @@
-- var footerLinks = [{ href: "#", text: "About", class: "link" },{ href: "#", text: "Jobs", class: "link" },{ href: "#", text: "Legal", class: "link" }]
+- 
+    var footerLinks = [
+        { href: "#", text: "About", class: "footer__link" },
+        { href: "#", text: "Jobs", class: "footer__link" },
+        { href: "#", text: "Legal", class: "footer__link" }
+    ]
 
-- var socialLinks = [{ href: "#", src: "images/twitter.png", class: "social-link" },{ href: "#", src: "images/telegram.png", class: "social-link" },{ href: "#", src: "images/youtube.png", class: "social-link" },{ href: "#", src: "images/discord.png", class: "social-link" }]
+- 
+    var socialLinks = [
+        { href: "#", src: "images/twitter.png", class: "footer__social-link" },
+        { href: "#", src: "images/telegram.png", class: "footer__social-link" },
+        { href: "#", src: "images/youtube.png", class: "footer__social-link" },
+        { href: "#", src: "images/discord.png", class: "footer__social-link" }
+    ]
 
 footer.footer
-    .container.footer-container
+    .container.footer__container
         a.logo(href='#')
             img(src='images/Logo.svg', alt='logo')
-        .links
+        .footer__links
             include ../partials/tooltip.pug
             each link in footerLinks
                 div(href=link.href, class=link.class)= link.text
-        .socials 
+        .footer__socials 
             each link in socialLinks
                 a(href=link.href, class=link.class)
                     img(src=link.src)

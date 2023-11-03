@@ -2,14 +2,14 @@ include ../mixins/colorBtn.pug
 
 - var buttons = [{ color: '#FFB4D3', text: 'Investment DAO' },{ color: '#FFC24C', text: 'Startup DAO' },{ color: '#D387F7', text: 'Service DAO' },{ color: '#77E6FF', text: 'Community DAO' },{ color: '#23C9DE', text: 'Impact DAO' },{ color: '#FF9E9E', text: 'DeFi DAO' }]
 section.ready
-    .ready-title 
+    .ready__title 
         h2.second-title Ready for every project
-        .ready-stars 
+        .ready__stars 
             img(src="images/stars_1.svg", alt="stars")
-    .project-buttons
+    .ready__project-buttons
         each button in buttons
             +colorBtn(button.color, button.text)
-    .ready-img
+    .ready__img
         img(src="images/ready_img.png", alt="projects")
-        .project-launched 
+        .ready__project-launched 
             span 1000+ projects launched on Superdao

@@ -13,14 +13,14 @@ timeLineStarted.fromTo('.header', {
     opacity: 1,
     duration: 1,  
     ease: "power3.out",
-}).fromTo('.started-title', {
+}).fromTo('.started__title', {
   x: -300,
   opacity: 0,
 }, {
   x: 0,
   opacity: 1,
   duration: 1
-}).fromTo('.started-description', {
+}).fromTo('.started__description', {
     x: 100,
     opacity: 0
 }, {
@@ -35,7 +35,7 @@ timeLineStarted.fromTo('.header', {
     opacity: 1
 })
 
-gsap.from('.designed-list a:nth-child(odd)', {
+gsap.from('.designed__list a:nth-child(odd)', {
     x: -200,
     opacity: 0, 
     duration: 1, 
@@ -48,7 +48,7 @@ gsap.from('.designed-list a:nth-child(odd)', {
     },
 });
 
-gsap.from('.project-buttons .color-btn', {
+gsap.from('.ready__project-buttons .color-btn', {
     opacity: 0,
     scale: 0,
     stagger: 0.2,
@@ -58,7 +58,7 @@ gsap.from('.project-buttons .color-btn', {
     }
 })
 
-gsap.from('.designed-list a:nth-child(even)', {
+gsap.from('.designed__list a:nth-child(even)', {
     x: 200, 
     opacity: 0, 
     duration: 0.7, 

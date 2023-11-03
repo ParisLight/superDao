@@ -1,12 +1,12 @@
 .ready {
   text-align: center;
   margin-top: 65px;
-}
 
-.ready-title{
+  &__title{
     position: relative;
-}
-.ready-stars{
+  }
+
+  &__stars{
     position: absolute;
     left: 100px;
     top: 0;
@@ -16,25 +16,25 @@
         height: 100%;
         object-fit: cover;
     }
-}
+  }
 
-.project-buttons {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  column-gap: 24px;
-  row-gap: 24px;
-  justify-content: center;
-  margin-top: 44px;
-}
-
-.ready-img{
+  &__img{
     position: relative;
     margin-top: 44px;
     border-radius: 30px;
-}
+  }
 
-.project-launched{
+  &__project-buttons {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 24px;
+    justify-content: center;
+    margin-top: 44px;
+  }
+
+  &__project-launched{
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -64,7 +64,12 @@
         transform:  skew(300deg);
         animation: spark 2.5s infinite;
     }
+  }
 }
+
+
+
+
 
 
 

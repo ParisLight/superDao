@@ -1,11 +1,11 @@
 - var navLinks = [{ href: "#", text: "Product" },{ href: "#", text: "Use cases" },{ href: "#", text: "Learn" },{ href: "#", text: "About" },{ href: "#", text: "Jobs" }];
 
 header.header
-    .container.header-navigation  
+    .container.header__navigation  
         a.logo(href='#')
             img(src='images/Logo.svg', alt='logo')
-        nav.header-nav
+        nav.header__nav
             each link in navLinks
                 a(href=link.href)= link.text
-        .header-btn
+        .header__btn
             span Login
